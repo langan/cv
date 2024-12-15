@@ -23,8 +23,6 @@ jobs:
                   version: 9
 
             - uses: actions/setup-node@v4
-              env:
-                  GITHUB_TOKEN: ${{ github.token }}
               with:
                   node-version: 20
                   cache: 'pnpm'
@@ -34,4 +32,4 @@ jobs:
             - run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD
             - run: git config user.name "github-actions[bot]"
             - run: git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            - run: pnpm exec nx-cloud record -- pnpm exec nx release --skip-publish
+            - run: pnpm exec nx-cloud record -- pnpm exec nx release --skip-publish --yes
