@@ -47,8 +47,19 @@
         }
     },
     "release": {
+        "projectsRelationship": "independent",
+        "projects": ["apps/*"],
+        "git": {
+            "commitMessage": "chore: updated version [no ci]"
+        },
         "version": {
             "conventionalCommits": true
+        },
+        "changelog": {
+            "workspaceChangelog": {
+                "createRelease": "github",
+                "file": false
+            }
         }
     }
 }
