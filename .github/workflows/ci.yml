@@ -24,6 +24,7 @@ jobs:
 
             - uses: actions/setup-node@v4
               with:
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
                   node-version: 20
                   cache: 'pnpm'
 
