@@ -23,8 +23,9 @@ jobs:
                   version: 9
 
             - uses: actions/setup-node@v4
+              env:
+                  GITHUB_TOKEN: ${{ github.token }}
               with:
-                  repo-token: ${{ secrets.GITHUB_TOKEN }}
                   node-version: 20
                   cache: 'pnpm'
 
