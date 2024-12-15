@@ -1,3 +1,5 @@
+import { Typography } from '@mui/material';
+
 export default function Index() {
     /*
      * Replace the elements below with your own.
@@ -8,6 +10,9 @@ export default function Index() {
         <div>
             <div className="wrapper">
                 <div className="container">
+                    <Typography variant="h1" component="h1" fontWeight="700">
+                        John Langan
+                    </Typography>
                     <div id="welcome">
                         <h1>
                             <span> Hello there, </span>
