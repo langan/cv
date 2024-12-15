@@ -1,0 +1,9 @@
+{
+  "name": "langan-cv-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/langan-cv-app",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project langan-cv-app --web",
+  "targets": {}
+}
