@@ -15,7 +15,7 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx dev langan-cv-app
+pnpm nx dev langan-cv-app
 ```
 
 To create a production bundle:
