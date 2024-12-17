@@ -9,7 +9,7 @@ on:
 permissions:
     actions: write
     contents: write
-    releases: write
+    deployments: write
 
 jobs:
     main:
@@ -24,8 +24,6 @@ jobs:
                   version: 9
 
             - uses: actions/setup-node@v4
-              env:
-                  GITHUB_TOKEN: ${{ github.token }}
               with:
                   node-version: 20
                   cache: 'pnpm'
