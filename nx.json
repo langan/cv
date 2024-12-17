@@ -48,12 +48,13 @@
     },
     "release": {
         "projectsRelationship": "fixed",
-        "projects": ["apps/*"],
+        "projects": ["apps/*", "theme"],
         "git": {
             "commitMessage": "chore: updated version [no ci]",
             "commit": true
         },
         "version": {
+            "preVersionCommand": "pnpm dlx nx run-many -t build",
             "conventionalCommits": true
         },
         "changelog": {
