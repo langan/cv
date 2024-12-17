@@ -14,6 +14,7 @@ import {
 
 import Icon from '@mdi/react';
 import Stack from '@mui/material/Stack';
+import React from 'react';
 import { ChipItem, ChipList } from './ChipList';
 import { ContactList } from './ContactList';
 import { SideMenuContent } from './SideMenuSection';

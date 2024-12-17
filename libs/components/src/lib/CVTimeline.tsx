@@ -9,6 +9,7 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineOppositeContent, { timelineOppositeContentClasses } from '@mui/lab/TimelineOppositeContent';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import Typography from '@mui/material/Typography';
+import React from 'react';
 
 export const CVTimeline = () => {
     return (

@@ -1,5 +1,6 @@
 import { theme } from '@cv/theme';
 import { Avatar, Stack } from '@mui/material';
+import React from 'react';
 
 interface AvatarHeaderProps {
     avatar: string;

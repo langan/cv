@@ -2,6 +2,7 @@
 import { theme } from '@cv/theme';
 import { Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import React from 'react';
 
 interface HeaderProps {
     name: string;
