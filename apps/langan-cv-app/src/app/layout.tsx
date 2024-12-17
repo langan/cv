@@ -1,12 +1,12 @@
+import { theme } from '@cv/theme';
+import '@fontsource/montserrat/700.css';
 import '@fontsource/open-sans/300.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/500.css';
 import '@fontsource/open-sans/700.css';
-import '@fontsource/montserrat/700.css';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
-import { Open_Sans, Montserrat } from 'next/font/google';
-import theme from '../theme';
+import { Montserrat, Open_Sans } from 'next/font/google';
 import './global.css';
 
 export const metadata = {
