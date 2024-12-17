@@ -1,3 +1,13 @@
+## 0.4.2 (2024-12-17)
+
+### 🩹 Fixes
+
+- put back bot ([50a2ab0](https://github.com/langan/cv/commit/50a2ab0))
+
+### ❤️ Thank You
+
+- John Langan
+
 ## 0.4.1 (2024-12-17)
 
 ### 🩹 Fixes
