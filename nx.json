@@ -48,7 +48,7 @@
     },
     "release": {
         "projectsRelationship": "fixed",
-        "projects": ["apps/*", "theme"],
+        "projects": ["*"],
         "git": {
             "commitMessage": "chore: updated version [no ci]",
             "commit": true,
