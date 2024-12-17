@@ -1,3 +1,13 @@
+## 0.4.3 (2024-12-17)
+
+### 🩹 Fixes
+
+- last attempt ([2d97b10](https://github.com/langan/cv/commit/2d97b10))
+
+### ❤️ Thank You
+
+- John Langan
+
 ## 0.4.2 (2024-12-17)
 
 ### 🩹 Fixes
