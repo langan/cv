@@ -27,9 +27,11 @@ jobs:
               with:
                   node-version: 20
                   cache: 'pnpm'
-
             - run: pnpm install --frozen-lockfile
+
             - uses: nrwl/nx-set-shas@v4
+              env:
+                  GITHUB_TOKEN: ${{ github.token }}
             - run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD
             - run: git config user.name "github-actions[bot]"
             - run: git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
