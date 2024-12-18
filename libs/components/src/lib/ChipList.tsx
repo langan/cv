@@ -1,5 +1,4 @@
 import { Chip, Stack } from '@mui/material';
-import React from 'react';
 
 export interface ChipItem {
     label: string;
@@ -15,9 +14,9 @@ export const ChipList = ({ chips = [] }: ChipListProps) => {
         <Stack sx={{ bgcolor: 'primary.main' }} direction="row" flexWrap="wrap" justifyContent="center" gap={2} p={2}>
             {chips.map((chip, index) =>
                 chip.icon ? (
-                    <Chip key={index} label={chip.label} color="info" icon={chip.icon} />
+                    <Chip key={index} label={chip.label} color="secondary" icon={chip.icon} />
                 ) : (
-                    <Chip key={index} label={chip.label} color="info" />
+                    <Chip key={index} label={chip.label} color="secondary" />
                 )
             )}
         </Stack>
