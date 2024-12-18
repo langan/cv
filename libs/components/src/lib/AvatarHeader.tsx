@@ -1,4 +1,3 @@
-import { theme } from '@cv/theme';
 import { Avatar, Stack } from '@mui/material';
 
 interface AvatarHeaderProps {
@@ -6,7 +5,6 @@ interface AvatarHeaderProps {
 }
 
 export const AvatarHeader = ({ avatar }: AvatarHeaderProps) => {
-    const avatarOutline = `8px solid ${theme.palette.primary.main}`;
     return (
         <Stack
             sx={{
