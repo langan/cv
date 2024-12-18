@@ -9,7 +9,7 @@ import { PageSection } from './PageSection';
 
 export const CVContent = () => {
     return (
-        <Stack sx={{ height: '100%' }} direction="column" gap={4} p={2}>
+        <Stack sx={{ height: '100%' }} direction="column" gap={4} p={4}>
             <PageSection title="Overview">
                 <Stack direction="column" gap={2}>
                     <Typography variant="body1">

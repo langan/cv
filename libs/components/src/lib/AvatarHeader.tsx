@@ -1,6 +1,5 @@
 import { theme } from '@cv/theme';
 import { Avatar, Stack } from '@mui/material';
-import React from 'react';
 
 interface AvatarHeaderProps {
     avatar: string;
@@ -12,13 +11,13 @@ export const AvatarHeader = ({ avatar }: AvatarHeaderProps) => {
         <Stack
             sx={{
                 height: '100%',
-                backgroundColor: 'secondary.main'
+                background: 'linear-gradient(90deg, rgba(0,131,143,1) 30%, rgba(84,110,122,1) 100%)'
             }}
             direction="row"
             justifyContent="center"
             alignItems="center"
         >
-            <Avatar sx={{ outline: avatarOutline, width: 96, height: 96 }} alt="John Langan" src={avatar} />
+            <Avatar sx={{ width: 100, height: 100 }} alt="John Langan" src={avatar} />
         </Stack>
     );
 };

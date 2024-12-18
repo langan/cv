@@ -1,6 +1,7 @@
 export * from './AvatarHeader';
 export * from './ChipList';
 export * from './ContactList';
+export * from './CV';
 export * from './CVContent';
 export * from './CVTimeline';
 export * from './Header';

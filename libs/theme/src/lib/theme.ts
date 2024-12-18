@@ -8,36 +8,42 @@ export const sizes = {
 };
 
 export const theme = createTheme({
+    defaultColorScheme: 'light',
+    colorSchemes: { light: true },
     cssVariables: true,
     typography: {
         h1: {
             fontFamily: 'var(--font-monsterrat)',
-            fontSize: '3rem'
+            fontSize: '3rem',
+            fontWeight: 500
         },
         h3: {
             fontFamily: 'var(--font-open-sans)',
-            fontSize: '2rem',
+            fontSize: '1.5rem',
             fontWeight: 300
         },
         h4: {
-            fontFamily: 'var(--font-open-sans)',
+            fontFamily: 'var(--font-monsterrat)',
             fontSize: '1.5rem',
             fontWeight: 400
         },
         h5: {
-            fontFamily: 'var(--font-open-sans)',
+            fontFamily: 'var(--font-monsterrat)',
             fontSize: '1.5rem',
-            fontWeight: 500,
-            textTransform: 'uppercase'
+            fontWeight: 400
         },
         fontFamily: 'var(--font-open-sans)'
     },
     palette: {
+        background: {
+            default: '#2E3B4E',
+            paper: colors.common.white
+        },
         primary: {
-            main: colors.blueGrey['700']
+            main: colors.cyan['800']
         },
         secondary: {
-            main: colors.grey['300']
+            main: colors.blueGrey['600']
         }
     }
 });

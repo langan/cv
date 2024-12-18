@@ -14,7 +14,6 @@ import {
 
 import Icon from '@mdi/react';
 import Stack from '@mui/material/Stack';
-import React from 'react';
 import { ChipItem, ChipList } from './ChipList';
 import { ContactList } from './ContactList';
 import { SideMenuContent } from './SideMenuSection';
@@ -67,8 +66,8 @@ export const SideMenu = () => {
                 height: '100%'
             }}
             direction="column"
-            py={2}
-            gap={1}
+            gap={4}
+            py={4}
         >
             <SideMenuContent title="Contact">
                 <ContactList />
