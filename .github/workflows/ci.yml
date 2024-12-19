@@ -36,13 +36,13 @@ jobs:
               with:
                   node-version: 20
                   cache: 'pnpm'
-            - run: pnpm install --frozen-lockfile
+              run: pnpm install --frozen-lockfile
 
             - uses: nrwl/nx-set-shas@v4
-            - run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD
+              run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD
 
             - name: Run nx release
-            - run: |
+              run: |
                   git config --global user.email "mr.langan@gmail.com"
                   git config --global user.name "John Langan"
                   pnpm exec nx-cloud record -- pnpm exec nx release --skip-publish
