@@ -36,9 +36,13 @@ jobs:
               with:
                   node-version: 20
                   cache: 'pnpm'
+
+            - name: Install dependencies
               run: pnpm install --frozen-lockfile
 
             - uses: nrwl/nx-set-shas@v4
+
+            - name: Run nx affected
               run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD
 
             - name: Run nx release
