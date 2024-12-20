@@ -2,7 +2,9 @@
     "name": "@langan-cv/source",
     "version": "0.5.3",
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "dev": "pnpm nx run langan-cv-app:dev"
+    },
     "private": true,
     "dependencies": {
         "@emotion/cache": "^11.14.0",
