@@ -4,7 +4,7 @@ import { createTheme } from '@mui/material/styles';
 
 export const sizes = {
     headerHeight: '10vh',
-    sideMenuWidth: '20vw'
+    SideBarWidth: '20vw'
 };
 
 export const theme = createTheme({

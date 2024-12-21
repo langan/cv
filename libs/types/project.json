@@ -1,17 +1,17 @@
 {
-    "name": "components",
+    "name": "types",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/components/src",
+    "sourceRoot": "libs/types/src",
     "projectType": "library",
-    "tags": ["scope:components type:util"],
+    "tags": ["scope:types type:util"],
     "targets": {
         "build": {
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/libs/components",
-                "main": "libs/components/src/index.ts",
-                "tsConfig": "libs/components/tsconfig.lib.json",
+                "outputPath": "dist/libs/types",
+                "main": "libs/types/src/index.ts",
+                "tsConfig": "libs/types/tsconfig.lib.json",
                 "assets": []
             }
         }

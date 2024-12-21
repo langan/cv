@@ -1,5 +1,3 @@
-'use client';
-import { theme } from '@cv/theme';
 import { Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
@@ -12,7 +10,7 @@ export function Header({ name, jobTitle }: HeaderProps) {
     return (
         <Stack
             sx={{
-                backgroundColor: theme.palette.secondary.main,
+                backgroundColor: 'secondary.main',
                 boxShadow: '0 4px 2px -2px rgba(0, 0, 0, 0.2)'
             }}
             direction="row"

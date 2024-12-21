@@ -19,6 +19,14 @@ module.exports = [
                         {
                             sourceTag: '*',
                             onlyDependOnLibsWithTags: ['*']
+                        },
+                        {
+                            sourceTag: 'type:app',
+                            onlyDependOnLibsWithTags: ['*']
+                        },
+                        {
+                            sourceTag: 'type:lib',
+                            onlyDependOnLibsWithTags: ['type:lib']
                         }
                     ]
                 }

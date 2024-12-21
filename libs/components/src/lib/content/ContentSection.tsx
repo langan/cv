@@ -1,12 +1,12 @@
 import { Divider, Stack, Typography } from '@mui/material';
 import React from 'react';
 
-interface PageSectionProps {
+interface ContentSectionProps {
     title: string;
     children: React.ReactNode;
 }
 
-export const PageSection = ({ title, children }: PageSectionProps) => {
+export const ContentSection = ({ title, children }: ContentSectionProps) => {
     return (
         <Stack direction="column">
             <Typography variant="h4" component="h4">

@@ -1,3 +1,4 @@
+'use client';
 import { mdiSnake, mdiWordpress } from '@mdi/js';
 import { Icon } from '@mdi/react';
 import { Phone } from '@mui/icons-material';
@@ -9,7 +10,6 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineOppositeContent, { timelineOppositeContentClasses } from '@mui/lab/TimelineOppositeContent';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import Typography from '@mui/material/Typography';
-import React from 'react';
 
 export const CVTimeline = () => {
     return (

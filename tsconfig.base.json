@@ -17,7 +17,8 @@
         "baseUrl": ".",
         "paths": {
             "@cv/components": ["libs/components/src/index.ts"],
-            "@cv/theme": ["libs/theme/src/index.ts"]
+            "@cv/theme": ["libs/theme/src/index.ts"],
+            "@cv/types": ["libs/types/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

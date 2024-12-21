@@ -1,12 +1,12 @@
 import { Divider, Stack, Typography } from '@mui/material';
 import React from 'react';
 
-interface SideMenuContentProps {
+interface SideBarContentProps {
     title: string;
     children: React.ReactNode;
 }
 
-export const SideMenuContent = ({ title, children }: SideMenuContentProps) => {
+export const SideBarContent = ({ title, children }: SideBarContentProps) => {
     return (
         <Stack>
             <Stack direction="row" alignItems="center" justifyContent="center">
