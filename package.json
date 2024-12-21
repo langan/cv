@@ -1,6 +1,6 @@
 {
     "name": "@langan-cv/source",
-    "version": "0.5.3",
+    "version": "0.6.0",
     "license": "MIT",
     "scripts": {
         "dev": "pnpm nx run langan-cv-app:dev"
