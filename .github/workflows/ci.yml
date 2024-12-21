@@ -12,11 +12,6 @@ permissions:
     deployments: write
 
 env:
-    # NX release needs to have a GH token in env.GITHUB_TOKEN
-    # As during this workflow we will create a new release
-    # that should trigger other workflow, we need to create custom TOKEN
-    # with proper permissions,
-    # more: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
     GITHUB_TOKEN: ${{ secrets.CVDEPLOY }}
 
 jobs:
@@ -40,6 +35,9 @@ jobs:
               run: pnpm install --frozen-lockfile
 
             - uses: nrwl/nx-set-shas@v4
+
+            - name: Run nx format check
+              run: pnpm exec nx-cloud record -- pnpm exec nx format:check
 
             - name: Run nx affected
               run: pnpm exec nx-cloud record -- pnpm exec nx affected -t lint test build --base=origin/main --head=HEAD

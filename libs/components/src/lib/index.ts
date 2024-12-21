@@ -8,3 +8,5 @@ export * from './Header';
 export * from './PageSection';
 export * from './SideMenu';
 export * from './SideMenuSection';
+export * from './Skills';
+export * from './SkillsList';
