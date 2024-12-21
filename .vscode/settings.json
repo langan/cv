@@ -1,3 +1,4 @@
 {
-    "conventionalCommits.scopes": ["docs", "deploy", "cv"]
+    "conventionalCommits.scopes": ["docs", "deploy", "cv"],
+    "exportall.config.folderListener": ["/libs/types/src/lib"]
 }
