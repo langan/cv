@@ -6,6 +6,7 @@ import { IconFactory, SideBarContent } from '..';
 async function getSkills(typeID: number) {
     if (!process.env['DATABASE_URL']) {
         console.error('DATABASE_URL is not defined');
+        return [];
     }
     const sql = neon(process.env['DATABASE_URL'] ?? '');
     const response = await sql`SELECT * FROM cv_skills WHERE type_id = ${typeID};`;

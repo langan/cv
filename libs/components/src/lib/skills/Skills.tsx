@@ -8,6 +8,7 @@ import { SkillsList } from './SkillsList';
 const getSkillTypes = async () => {
     if (!process.env['DATABASE_URL']) {
         console.error('DATABASE_URL is not defined');
+        return [];
     }
     const sql = neon(process.env['DATABASE_URL'] ?? '');
     const response = await sql`SELECT * FROM cv_skill_types;`;
