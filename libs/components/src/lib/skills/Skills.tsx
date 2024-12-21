@@ -1,12 +1,12 @@
 import { SkillType } from '@cv/types';
 import { Stack } from '@mui/material';
 import { neon } from '@neondatabase/serverless';
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { SkillLoader } from './SkillLoader';
 import { SkillsList } from './SkillsList';
 
 const getSkillTypes = async () => {
-    if (!process.env.DATABASE_URL) {
+    if (!process.env['DATABASE_URL']) {
         throw new Error('DATABASE_URL is not defined');
     }
     const sql = neon(process.env['DATABASE_URL']);

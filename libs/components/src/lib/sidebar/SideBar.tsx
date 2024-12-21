@@ -1,8 +1,9 @@
+/// <reference types="react/experimental" />
 import Stack from '@mui/material/Stack';
 import { Suspense } from 'react';
-import { SideBarContent } from './SideBarSection';
-import { SkillsLoader, Skills } from '../skills';
+import { Skills, SkillsLoader } from '../skills';
 import { ContactList } from './ContactList';
+import { SideBarContent } from './SideBarSection';
 
 export const SideBar = () => {
     return (
